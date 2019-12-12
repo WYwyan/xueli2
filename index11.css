@@ -7,7 +7,7 @@
 		}
 		.top{
 			height: 20px;
-			width:1300px;
+			width:1600px;
 			background-color: #ccc;
 			margin-top: 120px;
 			padding-left: 150px;
@@ -19,7 +19,7 @@
 			display: inline-block;
 			color: red;
 			height: 20px;
-			width: 1000px;
+			width: 1100px;
 			border: 1px solid none;
 			font-size: 12px;
 			overflow: hidden;
