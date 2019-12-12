@@ -3,6 +3,7 @@ var box=document.getElementById('box');
 	var slider=document.getElementById('slider');
 	var left=document.getElementById('left');
 	var right=document.getElementById('right');
+	var top1=document.getElementById("top1");
 	var index=1;
 	var timer;
 	var isMoving=false;
@@ -38,6 +39,19 @@ var box=document.getElementById('box');
 		});
 	}
 	var timer=setInterval(next,3000);
+	var i=2;
+
+	setInterval(function(){
+		objStyle=getComputedStyle(top1);
+		top1.style.marginLeft=(parseInt(objStyle["marginLeft"])-1)+"px";
+		top1.style.marginRight=(parseInt(objStyle["marginRight"])+1)+"px";
+		if(parseInt(objStyle["marginRight"])>1550){
+			top1.style.marginRight="200px";
+			top1.style.marginLeft="1000px"
+		}
+	
+	},20);
+	
 	//鼠标划入清定时器
 	box.onmouseover=function(){
 		animate(left,{opacity:50})
@@ -50,6 +64,7 @@ var box=document.getElementById('box');
 		animate(right,{opacity:0})
 		timer=setInterval(next,3000);
 	}
+
 	right.onclick=next;
 	left.onclick=prev;
 	//小按钮点击事件
