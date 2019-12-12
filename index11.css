@@ -7,11 +7,10 @@
 		}
 		.top{
 			height: 20px;
-			width:1500px;
+			width:1600px;
 			background-color: #ccc;
 			margin-top: 120px;
 			padding-left: 150px;
-			border-color:red;
 		}
 		.top>img{
 			height: 20px;
