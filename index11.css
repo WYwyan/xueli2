@@ -7,7 +7,7 @@
 		}
 		.top{
 			height: 20px;
-			width:1600px;
+			width:2000px;
 			background-color: #ccc;
 			margin-top: 120px;
 			padding-left: 150px;
@@ -33,7 +33,7 @@
 			height: 397px;
 			width: 1200px;
 			border: 1px solid white;
-			margin: 10px auto;
+			margin: 10px;
 			position: relative;
 			overflow: hidden;
 		}
